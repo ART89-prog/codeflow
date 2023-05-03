@@ -282,7 +282,10 @@ button {
 ------------*/
 
 header .cont {
-    max-width: 1270px;    
+    max-width: 1270px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
 }
 header .mob_menu_btn {
     display: none;
@@ -296,7 +299,6 @@ header .mob_menu_btn {
     flex-wrap: wrap;
     z-index: 8;
 }
-
 header .close_btn {
     color: #000;
     order: 1;
@@ -314,17 +316,16 @@ header .close_btn {
 header .close_btn img {
     width: 29px;
 }
-
 header .menu {
     display: flex;
     align-items: center;
 }
-
 header .menu .item a {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 1.5;
-    color: var(--text_color);
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
     position: relative;
     transition: color .2s linear;
     text-decoration: none;
@@ -333,77 +334,219 @@ header .menu .item a {
     display: block;
     text-decoration: none;
     cursor: pointer;
-    margin-right: 15px;
+    margin-right: 32px;
     white-space: nowrap;
-}
-header .menu .item a:after {
-    background-color: #0079C0;
-    display: block;
-    content: "";
-    height: 3px;
-    width: 0%;
-    -webkit-transition: width .3s ease-in-out;
-    -moz--transition: width .3s ease-in-out;
-    transition: width .3s ease-in-out; 
-}
-header .menu .item a:hover:after,
-header .menu .item a:focus:after {
-    width: 100%;
 }
 header .menu .item:last-child a {
     margin-right: 0;
 }
-
 header {
-    padding: 12px 0 17px;
+    padding:50px 0 35px;
     position: fixed;
     z-index: 200;
     background: #fff;
     width: 100%;    
 }
-
-.header_top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.header_callback {
+    margin-left: 257px;
+    width: 138px;
+    height: 46px;
+    background: #FCC344;
+    border-radius: 16px;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 46px;
+    text-align: center;
+    color: #000000;
 }
 .header_logo {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    white-space: nowrap;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1;
-    color: var(--text_color);
     margin-right: auto;
 }
-.header_logo img {
-    margin-right: 10px;
-    display: block;
-}
-
+ 
 
 
 
 
 .first-section {
+    margin-top: 134px;
+    margin-bottom: 68px;
 }
-.cont {
+.first-section .cont {
+    max-width: 1400px;
 }
 .first-section_wrap {
     background: #FCC344;
     border-radius: 32px;
+    padding: 91px 95px 40px;
+    position: relative;
 }
 .first-section_label {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    color: #000000; 
+    margin-bottom: 6px;
 }
 .first-section_title {
+    font-weight: 700;
+    font-size: 41px;
+    line-height: 50px;
+    color: #000000;
+    margin-bottom: 37px;
 }
 .first-section_text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 38px;
+    max-width: 764px;
+    width: 100%;
 }
 .first-section_link {
+    width: 242px;
+    height: 56px;
+    background: #000000;
+    border-radius: 16px;
+    margin-bottom: 44px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 56px;
+    color: #FFFFFF;
+    text-align: center;
+    display: block;
+    text-decoration: none;
 }
 .first-section_btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.first-section_btn img {
+    margin-right: 10px;
 }
 .first-section_img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -40px;
+}
+
+
+
+.course {
+}
+.course .cont {
+    max-width: 1250px;
+}
+.course_top {
+    position: relative;
+}
+.course_top::before {
+    position: absolute;
+    content: "";
+    width: 227px;
+    height: 202px;
+    left: 50%;
+    top: calc(100% + 21px);
+    transform: translateX(-50%);
+    background: url(../images/course-line.svg);
+}
+.course_quote {
+    padding: 17px 8px 17px 34px;
+    border: 1px solid #000000;
+    border-radius: 32px;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 52px;
+    color: #000000; 
+    margin-bottom: 25px;
+}
+.course_items {
+    margin-top: 228px;
+    padding: 0 139px;
+    column-count: 2;
+    column-gap: 165px;
+}
+.course_item-info {
+    background: #F7F7F7;
+    border-radius: 24px;
+    padding: 32px 42px 29px 31px;
+    margin-bottom: 25px;
+}
+.course_item-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+.course_item-img {
+    width: 103px;
+    height: 103px;
+}
+.course_item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.course_item-name {
+    margin-left: 51px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+    padding: 4px 14px;
+    background: #FCC344;
+}
+.course_item-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+.course_item-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #717171;
+}
+.course_item ul {
+    list-style: none;    
+    padding: 0px 42px 0px 29px;
+    margin-bottom: 67px;
+}
+.course_item ul li {
+    padding-left: 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    position: relative;
+}
+.course_item ul li:before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 1px;
+    background: #000;
+    top: 10px;
+    left: 0;
+}
+.course_item-bottom {
+    border-top: 1px solid #000000;
+}
+.course_item-price {
+}
+.course_item-sale {
+}
+.course_item-btn {
+}
+.course_item-link {
 }
