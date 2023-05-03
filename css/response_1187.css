@@ -1,0 +1,85 @@
+@media print, (max-width: 1187px) {
+
+    .about_video {
+        width: 380px;
+        height: 221px;
+    }
+    .about_left {
+        width: calc(100% - 660px);
+    }
+    .about_right {
+        width: 660px;
+        position: relative;
+    }
+    .footer_menu li {
+        line-height: 40px;
+        white-space: nowrap;
+    }
+    .footer_menu {
+        column-gap: 5px;
+    }
+    .footer_contacts {
+        padding-left: 22px;
+    }
+    .footer_politic {
+        margin-top: 35px;
+    }
+    .about,
+    .reviews,
+    .callback,
+    footer,
+    .service,
+    .work,
+    .certificate,
+    .contacts,
+    .projects,
+    .operation,
+    .partners {
+        padding: 50px 0;
+    }
+    .service_items {
+        margin-left: -20px;
+        margin-bottom: -30px;
+    }
+    .service_items > * {
+        width: calc(100%/3 - 20px);
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+    .projects_item-img  {
+        width: 430px;
+        height: 268px;
+    }
+    .projects_item:nth-child(2n + 1) .projects_item-info {
+        margin-right: 40px;
+    }
+    .projects_item:nth-child(2n) .projects_item-info {
+        margin-left: 40px;
+    }
+    .projects_item-info {
+        max-width: calc(100% - 470px);
+    }
+    .projects_item {
+        margin-bottom: 50px;
+    }
+
+    .operation_items {
+        margin-left: -20px;
+        margin-bottom: -30px;
+    }
+    .operation_items > * {
+        width: calc(100%/3 - 20px);
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+
+
+    .partners_items > * {
+        width: calc(100%/3 - 20px);
+    }
+    .header_img {
+        bottom: -305px;
+    }
+
+
+}
