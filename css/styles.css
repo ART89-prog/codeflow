@@ -685,6 +685,13 @@ header {
 }
 .example_left-img {
     margin-left: -30px;
+    width: 281px;
+    height: 281px;
+}
+.example_left-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
 .example_left-title {
     font-weight: 700;
@@ -709,8 +716,8 @@ header {
     width: 461px;
     height: 584px;
     background: url(../images/example-line.svg);
-    top: 15px;
-    left: -315px;
+    top: 6px;
+    left: -300px;
 }
 .example_item {
     font-weight: 500;
