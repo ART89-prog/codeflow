@@ -3,5 +3,8 @@
     .first-section_wrap {
         padding: 40px;
     }
+    .example_right:before {
+        left: -115px;
+    }
 
 }

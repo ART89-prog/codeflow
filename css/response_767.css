@@ -16,7 +16,7 @@
         position: fixed;
         z-index: 107;
         right: 100%;
-        top: 90px;
+        top: 85px;
         display: flex;
         overflow: auto;
         width: 100%;
@@ -49,6 +49,7 @@
     }
     header .menu .item {
         width: 100%;
+        margin-bottom: 10px;
     }
     header .menu .item + .item {
         margin-left: 0;
@@ -169,6 +170,7 @@
     }
     .programm_item-title {
         font-size: 20px;
+        line-height: 1.4;
     }
     .programm_item ul li {
         font-size: 16px;
@@ -179,7 +181,7 @@
     }
     .programm_bottom {
         padding-top: 20px;
-        margin-top: 20px;
+        margin-top: 35px;
     }
     .internship_items {
         margin-left: 0;
@@ -292,6 +294,28 @@
     .footer_info ul li {
         font-size: var(--font_size);
     }
+    .example_box {
+        margin-bottom: 40px;
+    }
+    .example_bottom-title {
+        margin-bottom: 30px;
+    }
+    .example_bottom-title br {
+        display: none;
+    }
+    .example_bottom-items {
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .example_bottom-item_title {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .programm_left {
+        margin-bottom: 7px;
+    }
+
+
 
 
 

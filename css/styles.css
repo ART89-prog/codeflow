@@ -290,7 +290,7 @@ header .cont {
 header .mob_menu_btn {
     display: none;
     width: 45px;
-    height: 40px;
+    height: 45px;
     margin-right: 0px;
     margin-left: 30px;
     justify-content: center;
@@ -308,7 +308,7 @@ header .close_btn {
     align-content: center;
     flex-wrap: wrap;
     margin-right: 0px;
-    margin-left: 30px;
+    margin-left: 38px;
     width: 45px;
     height: 45px;
     z-index: 500;
@@ -1037,13 +1037,6 @@ blockquote {
 
 
 
-.team {
-}
-.block {
-}
-.team .cont {
-    
-}
 .team_title {
     margin-bottom: 55px;
     text-align: center;

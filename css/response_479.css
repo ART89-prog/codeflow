@@ -2,8 +2,197 @@
 
     :root {
         --font_size: 14px;
-        --font_size_title: 24px;
+        --font_size_title: 22px;
     }
+    .first-section_text {
+        font-size: 17px;
+    }
+    .first-section_link {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .first-section_btn {
+        justify-content: center;
+    }
+    .course_quote {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .course_item-title {
+        font-size: 18x;
+        line-height: 24px;
+        margin-bottom: 8px;
+    }
+    .course_item-info {
+        margin-bottom: 10px;
+        padding: 0;
+    }
+    .course_item ul {
+        padding: 0;
+    }
+    .course_item ul li:before {
+        width: 12px;
+        top: 12px;
+    }
+    .course_item ul li {
+        margin-bottom: 3px;
+    }
+    .course_item ul:before {
+        bottom: -15px;
+        width: 100%;
+        left: 0;
+    }
+    .course_item-bottom {
+        padding: 0px;
+    }
+    .course_item-btn {
+        width: 100%;
+    }
+    .course_item-link {
+        justify-content: center;
+    }
+    .example_box {
+        margin-bottom: 30px;
+    }
+    .block {
+        margin-bottom: 30px;
+    }
+    .example_left-title {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .example_bottom-title {
+        margin-bottom: 20px;
+    }
+    .example_bottom-item:nth-child(1),
+    .example_bottom-item:nth-child(2) {
+        padding: 15px;
+        border-radius: 10px;
+    }
+    .example_bottom-item_text {
+        margin-bottom: 2px;
+    }
+    .example_bottom-title 
+    .example_title, 
+    .programm_title, 
+    .internship_title {
+        margin-bottom: 10px;
+    }
+    .programm_items > * {
+        padding: 0;
+    }
+    .programm_item-title {
+        font-size: 18px;
+    }
+    .programm_right {
+        flex-direction: column;
+    }
+    .programm_right-price {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .programm_left {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .callback_box, blockquote {
+        padding: 15px;
+        font-size: 16px;
+        line-height: 1.6;
+        border-radius: 10px;
+    }
+    .internship_items > * {
+        padding: 0;
+    }
+    .internship_item-title, 
+    .step_item-title, 
+    .team_item-title {
+        font-size: 18px;
+    }
+    .internship_item-title {
+        margin-bottom: 3px;
+    }
+    .step_title {
+        margin-bottom: 20px;
+    }
+    .step_img {
+        margin-bottom: 15px;
+    }
+    .step_item-number {
+        font-size: 28px;
+        line-height: 34px;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+    .step_item-title {
+        margin-bottom: 2px;
+    }
+    .step_items > * {
+        margin-bottom: 10px;
+    }
+    .team_title {
+        margin-bottom: 10px;
+    }
+    .team_item-img {
+        margin-bottom: 19px;
+        width: 145px;
+        height: 228px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .team_item-title {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .team_item-text {
+        text-align: center;
+    }
+    .team_items > * {
+        margin-bottom: 10px;
+    }
+    .reviews_title, 
+    .team_title {
+        margin-bottom: 20px;
+    }
+    .reviews_items > * {
+        padding: 0;
+    }
+    .team {
+        margin-bottom: 50px;
+    }
+    .videos_item-img img {
+        height: 260px;
+    }
+    .reviews_item-text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .callback_title {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 17px;
+        text-align: center;
+    }
+    .callback_btn {
+        width: 100%;
+    }
+    .callback_text img {
+        margin-right: 5px;
+    }
+    .programm_right-btn {
+        width: 100%;
+    }
+    .example_bottom-item_title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .example_bottom-title {
+        line-height: 1.4;
+    }
+
+
+
   
 
    
