@@ -25,80 +25,6 @@ $(() => {
   })
 
 
-  var show = true;
-  var countbox = ".numbers_items";
-  $(window).on("scroll load resize", function () {
-      if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
-      var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
-      var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
-      var w_height = $(window).height(); // Высота окна браузера
-      var d_height = $(document).height(); // Высота всего документа
-      var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
-      if (w_top + 500 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
-          $('.numbers_item-col').css('opacity', '0');
-          $('.numbers_item-col').spincrement({
-              thousandSeparator: "",
-              duration: 1200
-          });
-           
-          show = false;
-      }
-  });
-
-
-
-
-
-  const carouselText = [
-    { text: "тайм-менеджменту", color: "#29282E" }
-  ]
-
-  $(document).ready(async function () {
-    carousel(carouselText, "#feature-text")
-  });
-
-  async function typeSentence(sentence, eleRef, delay = 100) {
-    const letters = sentence.split("");
-    let i = 0;
-    while (i < letters.length) {
-      await waitForMs(delay);
-      $(eleRef).append(letters[i]);
-      i++
-    }
-    return;
-  }
-
-  async function deleteSentence(eleRef) {
-    const sentence = $(eleRef).html();
-    const letters = sentence.split("");
-    let i = 0;
-    while (letters.length > 0) {
-      await waitForMs(100);
-      letters.pop();
-      $(eleRef).html(letters.join(""));
-    }
-  }
-
-  async function carousel(carouselList, eleRef) {
-    var i = 0;
-    while (true) {
-      updateFontColor(eleRef, carouselList[i].color)
-      await typeSentence(carouselList[i].text, eleRef);
-      await waitForMs(1500);
-      await deleteSentence(eleRef);
-      await waitForMs(500);
-      i++
-      if (i >= carouselList.length) { i = 0; }
-    }
-  }
-
-  function updateFontColor(eleRef, color) {
-    $(eleRef).css('color', color);
-  }
-
-  function waitForMs(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms))
-  }
 
 
 
@@ -111,6 +37,21 @@ $(() => {
       type: 'inline',
     }]);
   })
+
+
+
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 500) {
+      $('#scroll_top').show();
+    } else {
+      $('#scroll_top').hide();
+    }
+  });
+
+  $('#scroll_top').click(function () {
+    $('html, body').animate({ scrollTop: 0 }, 600);
+    return false;
+  });
 
 
 
