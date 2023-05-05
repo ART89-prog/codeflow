@@ -182,6 +182,11 @@
     .example_bottom-title {
         font-size: var(--font_size_title);
     }
+    .team_item-img {
+        width: 235px;
+        height: 330px;
+    }
+
 
 
 
