@@ -8,7 +8,11 @@
     }
     .course_items {
         padding: 0;
-        column-gap: 30px;
+        margin-left: -35px;
+    }
+    .course_items > * {
+        width: calc(100%/2 - 35px);
+        margin-left: 35px;
     }
     .course_item-top {
         margin-bottom: 10px;
@@ -46,6 +50,7 @@
         right: 50px;
         top: 45%;
     }
+    
 
 
 

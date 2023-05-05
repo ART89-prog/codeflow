@@ -512,18 +512,20 @@ header {
 .course_items {
     margin-top: 228px;
     padding: 0 139px;
-    column-count: 2;
-    column-gap: 165px;
     scroll-margin-top: 126px;
+    display: flex;
+    margin-left: -165px;
 }
-.course_item {
+.course_items > * {
     -webkit-column-break-inside: avoid; 
     page-break-inside: avoid; 
     break-inside: avoid; 
     break-inside: avoid-column;  
     display: flex;
     flex-direction: column;
-    height: 100%;  
+    flex: 1 0 auto;  
+    width: calc(100%/2 - 165px);
+    margin-left: 165px;
 }
 .course_item-info {
     background: #F7F7F7;
@@ -572,17 +574,7 @@ header {
 .course_item ul {
     list-style: none;    
     padding: 0px 42px 0px 29px;
-    margin-bottom: 67px;
-    position: relative;
-}
-.course_item ul:before {
-    position: absolute;
-    content: "";
-    width: calc(100% - 29px - 42px);
-    height: 1px;
-    bottom: -67px;
-    left: 29px;
-    background: var(--text_color); 
+    margin-bottom: 61px;
 }
 .course_item ul li {
     padding-left: 24px;
@@ -608,6 +600,8 @@ header {
 .course_item-bottom {
     padding: 15px 56px 0px 43px; 
     margin-top: auto;
+    flex: 0 0 auto;
+    border-top: 1px solid #000;
 }
 .course_item-price {
     font-weight: 500;
