@@ -1,12 +1,6 @@
 $(() => {
 
 
-  //setTimeout(() => setHeight($(swiper.$el).find('.review')))
-  if ($(window).width() < 480) {
-    $(".cases_items .cases_item").addClass("active");
-    $(".cases_items .cases_item:first-child").removeClass("active");
-  }
-
   // Моб. меню
   $('header .mob_menu_btn').click((e) => {
     e.preventDefault()
@@ -17,7 +11,7 @@ $(() => {
     $('.overlay').fadeIn(300)
   })
 
-  $('header .close_btn, .overlay').click((e) => {
+  $('header .close_btn, header .menu .item a, .overlay').click((e) => {
     $('header .mob_menu_btn').removeClass('active')
     $('body').removeClass('menu_open')
     $('header .menu').removeClass('show')
